@@ -33,7 +33,8 @@ result_df = spark.sql(sql_query)
 
 # Show the result of the SQL query
 print("Result of the SQL query:")
-result_df.show()
+result_df.show();
+
 
 # Stop the Spark session
 spark.stop()
