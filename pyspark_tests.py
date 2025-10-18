@@ -27,14 +27,13 @@ df.printSchema()
 row_count = df.count()
 print(f"The DataFrame contains {row_count} rows.")
 
-# Run an SQL query
-sql_query = "SELECT email, gender FROM userdata"
+# Run an SQL query with GROUP BY
+sql_query = "SELECT gender, COUNT(*) as count FROM userdata GROUP BY gender"
 result_df = spark.sql(sql_query)
 
 # Show the result of the SQL query
 print("Result of the SQL query:")
-result_df.show();
-
+result_df.show()
 
 # Stop the Spark session
 spark.stop()
