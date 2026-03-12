@@ -17,6 +17,7 @@ def merge_maps_operator(map1, map2):
     """
     Merges two maps using the union operator (|).
     Valid for Python 3.9+.
+    Testing the auto checking
     """
     return map1 | map2
 
