@@ -5,6 +5,7 @@ def merge_maps_update(map1, map2):
     """
     merged = map1.copy()
     merged.update(map2)
+    # tests
     return merged
 
 def merge_maps_unpacking(map1, map2):
